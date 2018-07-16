@@ -84,7 +84,6 @@ function attachListeners(){
       url: '/games/' + e.target.id,
       method: "GET"
     }).done(function(response){
-
       response.data.attributes.state.forEach(function(i){
         debugger
         updateState(i)

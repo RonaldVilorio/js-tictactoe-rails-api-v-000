@@ -110,7 +110,7 @@ function previousGames(){
 
 function saveGame(){
   if(currentGame === 0){
-    $.post("/games",{"state": $("td")}).done(function(response){
+    $.post("/games",{"state": $("td").html()}).done(function(response){
       // debugger
       currentGame = response.data.id
     })

@@ -84,7 +84,7 @@ function attachListeners(){
       url: '/games/' + e.target.id,
       method: "GET"
     }).done(function(response){
-      
+
       updateState(response.data.attributes.state)
     })
   })
@@ -111,7 +111,7 @@ function previousGames(){
 function saveGame(){
   if(currentGame === 0){
     $.post("/games",$("td")).done(function(response){
-      debugger
+      // debugger
       currentGame = response.data.id
     })
   }else{

@@ -84,13 +84,14 @@ function attachListeners(){
       url: '/games/' + e.target.id,
       method: "GET"
     }).done(function(response){
-      debugger
+      // debugger
+      // $("td").empty()
       $("td").append(response.data.attributes.state)
-        response
     })
   })
 
 }
+
 function previousGames(){
 
   $.get("/games").done(function(response){

@@ -84,7 +84,7 @@ function attachListeners(){
       url: '/games/' + e.target.id,
       method: "GET"
     }).done(function(response){
-      response.data.attributes.state.forEach(function(i,val){
+      response.data.attributes.state.forEach(function(val,i){
         $(`td:eq(${val})`).html(i)
       })
       // // $("td").each(function(){

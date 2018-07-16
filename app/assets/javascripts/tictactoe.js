@@ -112,6 +112,7 @@ function saveGame(){
   if(currentGame === 0){
     let currentState = []
     $("td").each(function(){
+      debugger
       currentState += $(this).html()
     })
     $.post("/games",{"state": JSON.stringify(currentState)}).done(function(response){

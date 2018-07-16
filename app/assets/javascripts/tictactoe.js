@@ -86,6 +86,7 @@ function attachListeners(){
     }).done(function(response){
       debugger
       response.data.attributes.state.forEach(function(i){
+        debugger
         updateState(i)
       })
       $("td").each(function(){

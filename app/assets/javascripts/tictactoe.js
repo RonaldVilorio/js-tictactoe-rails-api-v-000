@@ -86,7 +86,8 @@ function attachListeners(){
     }).done(function(response){
       // debugger
       // $("td").empty()
-      $("td:eq(0)").append(response.data.attributes.state)
+      // $("td:eq(0)").append(response.data.attributes.state)
+      updateState(response.data.attributes.state)
     })
   })
 

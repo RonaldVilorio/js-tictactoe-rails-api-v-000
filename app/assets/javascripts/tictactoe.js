@@ -86,8 +86,9 @@ function attachListeners(){
     }).done(function(response){
       response.data.attributes.state.forEach(function(val,i){
         $(`td:eq(${i})`).html(val)
-        turn ++
+
       })
+      turn ++
     })
   })
 

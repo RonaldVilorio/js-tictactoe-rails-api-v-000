@@ -85,7 +85,7 @@ function attachListeners(){
       method: "GET"
     }).done(function(response){
       response.data.attributes.state.forEach(function(val,i){
-        $(`td:eq(${val})`).html(i)
+        $(`td:eq(${i})`).html(val)
       })
       // // $("td").each(function(){
       // //   $(this).text += response.data.attributes.state

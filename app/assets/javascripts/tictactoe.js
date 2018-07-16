@@ -116,7 +116,6 @@ function saveGame(){
       currentState.push($(this).text())
     })
     $.post("/games",{"state": currentState}).done(function(response){
-      debugger
       currentGame = response.data.id
     })
   }else{

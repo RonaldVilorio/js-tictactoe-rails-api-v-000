@@ -24,7 +24,6 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    binding.pry
     params.permit(state: [])
   end
 

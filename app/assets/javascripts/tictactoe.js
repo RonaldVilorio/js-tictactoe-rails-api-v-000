@@ -88,7 +88,7 @@ function attachListeners(){
         $(`td:eq(${i})`).html(val)
 
       })
-      
+      turn = response.data.attributes.state.length
     })
   })
 

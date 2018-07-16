@@ -87,6 +87,7 @@ function attachListeners(){
       response.data.attributes.state.forEach(function(val,i){
         $(`td:eq(${i})`).html(val)
       })
+      currentGame = e.target.id
       turn = response.data.attributes.state.filter(String).length
     })
   })

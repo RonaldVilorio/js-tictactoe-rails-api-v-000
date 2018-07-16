@@ -112,9 +112,7 @@ function previousGames(){
 
 function saveGame(){
   if(currentGame === 0){
-    // xhttp.open("POST","/games",true);
-    // xhttp.setRequestHeader("Content-type")
-    // xhttp.send($("td").text())
+    
     $.post("/games",$("td")).done(function(response){
       debugger
       currentGame = response.data.id

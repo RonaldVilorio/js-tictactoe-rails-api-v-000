@@ -111,6 +111,9 @@ function previousGames(){
 function saveGame(){
   if(currentGame === 0){
     let currentState = []
+    $("td").each(function(){
+      currentState += $(this).text()
+    })
     $.post("/games",{"state": $("td").html()}).done(function(response){
       // debugger
       currentGame = response.data.id

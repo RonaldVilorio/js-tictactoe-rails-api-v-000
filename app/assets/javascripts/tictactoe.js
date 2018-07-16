@@ -88,6 +88,7 @@ function attachListeners(){
         $(`td:eq(${i})`).html(val)
 
       })
+      debugger
       turn = response.data.attributes.state.filter(String).length
     })
   })

@@ -86,7 +86,6 @@ function attachListeners(){
     }).done(function(response){
       response.data.attributes.state.forEach(function(val,i){
         $(`td:eq(${i})`).html(val)
-
       })
       turn = response.data.attributes.state.filter(String).length
     })

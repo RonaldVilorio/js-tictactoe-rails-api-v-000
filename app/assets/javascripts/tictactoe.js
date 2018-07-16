@@ -84,8 +84,8 @@ function attachListeners(){
       url: '/games/' + e.target.id,
       method: "GET"
     }).done(function(response){
-
-      updateState(response.data.attributes.state)
+      debugger
+      $("td").html()(response.data.attributes.state)
     })
   })
 

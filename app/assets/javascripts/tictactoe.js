@@ -85,7 +85,7 @@ function attachListeners(){
       method: "GET"
     }).done(function(response){
       debugger
-      $("td").html()(response.data.attributes.state)
+      $("td").html(response.data.attributes.state)
     })
   })
 

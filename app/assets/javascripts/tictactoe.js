@@ -85,6 +85,9 @@ function attachListeners(){
       method: "GET"
     }).done(function(response){
       debugger
+      response.data.attributes.state.forEach(function(){
+        console.log(this)
+      })
       $("td").each(function(){
         $(this).text += response.data.attributes.state
       })

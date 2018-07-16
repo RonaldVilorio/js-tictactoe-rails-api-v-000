@@ -118,7 +118,7 @@ function saveGame(){
     })
   }else{
     $.ajax({
-      url: '/games/' + currentGame,
+      url: ('/games/' + currentGame),
       method: "PATCH"
     }).done(function(data){
 

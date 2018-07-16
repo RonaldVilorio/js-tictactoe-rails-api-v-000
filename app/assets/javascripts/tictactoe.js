@@ -114,7 +114,7 @@ function saveGame(){
     $("td").each(function(){
       currentState += $(this).text()
     })
-    $.post("/games",{"state": $("td").html()}).done(function(response){
+    $.post("/games",{"state": currentState).done(function(response){
       // debugger
       currentGame = response.data.id
     })

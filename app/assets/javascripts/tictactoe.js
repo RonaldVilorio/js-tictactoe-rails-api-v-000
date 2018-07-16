@@ -113,7 +113,7 @@ function saveGame(){
     let currentState = []
     $("td").each(function(){
       debugger
-      currentState.push($(this).html())
+      currentState.push($(this).text())
     })
     $.post("/games",{"state": JSON.stringify(currentState)}).done(function(response){
       // debugger

@@ -112,7 +112,7 @@ function saveGame(){
   if(currentGame === 0){
     let currentState = []
     $("td").each(function(){
-      debugger
+      // debugger
       currentState.push($(this).text())
     })
     $.post("/games",{"state": currentState}).done(function(response){

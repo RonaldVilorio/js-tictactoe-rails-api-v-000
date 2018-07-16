@@ -115,7 +115,7 @@ function saveGame(){
     // xhttp.open("POST","/games",true);
     // xhttp.setRequestHeader("Content-type")
     // xhttp.send($("td").text())
-    $.post("/games").done(function(response){
+    $.post("/games",$("td")).done(function(response){
       debugger
       currentGame = response.data.id
     })

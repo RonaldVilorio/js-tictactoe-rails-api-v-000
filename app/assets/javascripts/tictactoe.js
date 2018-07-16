@@ -88,7 +88,6 @@ function attachListeners(){
       $("td").each(function(){
         $(this).text += response.data.attributes.state
       })
-      $("td").html(response.data.attributes.state)
     })
   })
 
